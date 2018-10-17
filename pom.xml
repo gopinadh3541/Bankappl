@@ -51,7 +51,7 @@
                 <goal>deploy-file</goal>
             </goals>
             <configuration>
-                <file>C:\jenkins_installpath\workspace\Web_appl</file>
+                <file>C:\jenkins_installpath\workspace\Bank_appl</file>
                 <url>http://localhost:8080</url>
                 <groupId>com.capgemini.testdemo</groupId>
                 <artifactId>BankExample</artifactId>
