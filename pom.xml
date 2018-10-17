@@ -4,7 +4,7 @@
 	<groupId>com.capgemini.testdemo</groupId>
 	<artifactId>BankExample</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>BankExample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -51,12 +51,12 @@
                 <goal>deploy-file</goal>
             </goals>
             <configuration>
-                <file><!-- path-to-file --></file>
-                <url><!-- url-of-the-repository-to-deploy --></url>
-                <groupId><!-- group-id --></groupId>
-                <artifactId><!-- artifact-id --></artifactId>
-                <version><!-- version --></version>
-                <packaging><!-- type-of-packaging --></packaging>
+                <file>C:\jenkins_installpath\workspace\Web_appl</file>
+                <url>http://localhost:8080</url>
+                <groupId>com.capgemini.testdemo</groupId>
+                <artifactId>BankExample</artifactId>
+                <version>1.0</version>
+                <packaging>war</packaging>
             </configuration>
         </execution>
     </executions>
