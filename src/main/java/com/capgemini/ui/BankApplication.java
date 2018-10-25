@@ -1,13 +1,15 @@
 package com.capgemini.ui;
 
 import java.io.IOException;
+import java.util.Base64;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.*;
-import com.capgemini.bean.BankBean;
+
+/*import com.capgemini.bean.BankBean;*/
 
 /**
  * Servlet implementation class BankApplication
@@ -30,7 +32,7 @@ public class BankApplication extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		BankBean bean=new BankBean();
+		/*BankBean bean=new BankBean();*/
 		
 		
 		String number = request.getParameter("accnumber");
@@ -87,12 +89,16 @@ public class BankApplication extends HttpServlet {
 		String pwd = request.getParameter("pwd");
 
 		if (uname.equals(pwd) && uname != "") {
+			
 			System.out.println("Password is: "+pwd);
 			byte[] encrypt =Base64.getEncoder().encode(pwd.getBytes());
 			System.out.println("Encrypted text is: "+ new String(encrypt));
 			
 			byte[] decrypt=Base64.getDecoder().decode(encrypt);
 			System.out.println("Decrypted text is: "+ new String(decrypt));
+			
+			
+			
 			response.sendRedirect("menu.jsp");
 		} else {
 			HttpSession session = request.getSession();
