@@ -1,7 +1,7 @@
 package com.capgemini.ui;
 
 import java.io.IOException;
-import java.util.Base64;
+import java.util.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
