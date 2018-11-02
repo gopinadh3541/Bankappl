@@ -4,6 +4,7 @@
 	<groupId>com.capgemini.testdemo</groupId>
 	<artifactId>BankExample</artifactId>
 	<packaging>war</packaging>
+	<version>1</version>
 	<name>BankExample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
