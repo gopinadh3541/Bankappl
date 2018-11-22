@@ -5,11 +5,11 @@ node('master') {
     }
     stage('Clean')
     {
-        bat 'mvn clean'
+        bat 'mvn clean test'
     }
-   stage('Compile')
+   stage('Proceed to Packaging?')
     {
-       input 'Proceed to compile'
+       input 'Proceed to Packaging?'
     }
    
     stage('Packaging')
