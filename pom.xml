@@ -32,4 +32,22 @@
 
 	</dependencies>
 	
+	
+	<distributionManagement>
+		<repository>
+			<id>Release</id>
+			<name>Local Release</name>
+			<url>http://localhost:8081/nexus/repository/LOCAL-Rel/</url>
+		</repository>
+		<repository>
+			<id>SnapShot</id>
+			<name>Local Snapshot</name>
+			<url>http://localhost:8081/nexus/repository/LOCAL-Snap/</url>
+		</repository>
+	</distributionManagement>
+	
+	
+	
+	
+	
 </project>
