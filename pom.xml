@@ -39,11 +39,11 @@
 			<name>LOCAL-Rel</name>
 			<url>http://localhost:8081/nexus/repository/LOCAL-Rel/</url>
 		</repository>
-		<repository>
+		<snapshotRepository>
 			<id>LOCAL-Snap</id>
 			<name>LOCAL-Snap</name>
 			<url>http://localhost:8081/nexus/repository/LOCAL-Snap/</url>
-		</repository>
+		</snapshotRepository>
 	</distributionManagement>
 	
 	
