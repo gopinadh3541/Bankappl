@@ -20,7 +20,7 @@ node('master') {
     stage('Deploy')
    {
    
-      sh 'run.sh'
+      bat 'mvn deploy'
    
    }
   
