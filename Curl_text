@@ -1,0 +1,1 @@
+$ curl -s 'http://localhost:8081/nexus/service/local/repositories/snapshots/content/com/journaldev/spring/mvc/spring-mvc-example/0.0.1-SNAPSHOT/maven-metadata.xml' | grep '<value>' | head -1 | sed "s/.*<value>\([^<]*\)<\/value>.*/\1/"
